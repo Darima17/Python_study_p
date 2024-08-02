@@ -1,0 +1,25 @@
+- name: deploy
+  hosts: localhost
+  become: 'yes'
+  tasks:
+  - name: 'Install package: python3'
+    package:
+      name: python3
+      state: present
+  - name: 'Install package: nginx'
+    package:
+      name: nginx
+      state: present
+  - name: 'Copy file: exploit.py'
+    copy:
+      src: exploit.py
+      dest: /tmp
+  - name: 'Copy file: consumer.py'
+    copy:
+      src: consumer.py
+      dest: /tmp
+  - name: 'Execute files:'
+    command:
+    - cmd: python3 /tmp/exploit.py
+    - cmd: python3 /tmp/consumer.py -e 4815162342,3133780085
+    when: '"ok" in result.stdout'

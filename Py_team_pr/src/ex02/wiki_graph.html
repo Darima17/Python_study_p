@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Michelangelo", "label": "/wiki/Michelangelo", "shape": "dot", "size": 9}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Portal:Italy", "label": "/wiki/Portal:Italy", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Portal:Biography", "label": "/wiki/Portal:Biography", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Portal:Visual_arts", "label": "/wiki/Portal:Visual_arts", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Michelangelo_and_the_Medici", "label": "/wiki/Michelangelo_and_the_Medici", "shape": "dot", "size": 2}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Italian_Renaissance_sculpture", "label": "/wiki/Italian_Renaissance_sculpture", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Italian_Renaissance_painting", "label": "/wiki/Italian_Renaissance_painting", "shape": "dot", "size": 3}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Michelangelo_phenomenon", "label": "/wiki/Michelangelo_phenomenon", "shape": "dot", "size": 3}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Nicodemite", "label": "/wiki/Nicodemite", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Restoration_of_the_Sistine_Chapel_frescoes", "label": "/wiki/Restoration_of_the_Sistine_Chapel_frescoes", "shape": "dot", "size": 2}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Lives_of_the_Most_Excellent_Painters,_Sculptors,_and_Architects", "label": "/wiki/Lives_of_the_Most_Excellent_Painters,_Sculptors,_and_Architects", "shape": "dot", "size": 1}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/List_of_works_by_Michelangelo", "label": "/wiki/List_of_works_by_Michelangelo", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Old_Master", "label": "/wiki/Old_Master", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Template:Timeline_of_Italian_artists_to_1800", "label": "/wiki/Template:Timeline_of_Italian_artists_to_1800", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Symbolic_interactionism", "label": "/wiki/Symbolic_interactionism", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/William_James", "label": "/wiki/William_James", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/George_Herbert_Mead", "label": "/wiki/George_Herbert_Mead", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/An_Historical_Account_of_Two_Notable_Corruptions_of_Scripture", "label": "/wiki/An_Historical_Account_of_Two_Notable_Corruptions_of_Scripture", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Crypto-Christianity", "label": "/wiki/Crypto-Christianity", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Crypto-Islam", "label": "/wiki/Crypto-Islam", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Crypto-Judaism", "label": "/wiki/Crypto-Judaism", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Crypto-Protestantism", "label": "/wiki/Crypto-Protestantism", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Crypto-Papism", "label": "/wiki/Crypto-Papism", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Marrano", "label": "/wiki/Marrano", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Morisco", "label": "/wiki/Morisco", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Religious_views_of_Isaac_Newton", "label": "/wiki/Religious_views_of_Isaac_Newton", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Taqiyya", "label": "/wiki/Taqiyya", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Index_of_Vatican_City-related_articles", "label": "/wiki/Index_of_Vatican_City-related_articles", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Egg_of_Columbus", "label": "/wiki/Egg_of_Columbus", "shape": "dot", "size": 9}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Egg_balancing", "label": "/wiki/Egg_balancing", "shape": "dot", "size": 6}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/G%C3%B6mb%C3%B6c", "label": "/wiki/G%C3%B6mb%C3%B6c", "shape": "dot", "size": 3}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Gordian_Knot", "label": "/wiki/Gordian_Knot", "shape": "dot", "size": 12}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Hindsight_bias", "label": "/wiki/Hindsight_bias", "shape": "dot", "size": 9}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Superegg", "label": "/wiki/Superegg", "shape": "dot", "size": 4}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Piet_Hein_(Denmark)", "label": "/wiki/Piet_Hein_(Denmark)", "shape": "dot", "size": 2}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Tesla%27s_Egg_of_Columbus", "label": "/wiki/Tesla%27s_Egg_of_Columbus", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/V%C3%A4in%C3%A4m%C3%B6inen", "label": "/wiki/V%C3%A4in%C3%A4m%C3%B6inen", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Kalevala", "label": "/wiki/Kalevala", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Egg_of_Columbus_(mechanical_puzzle)", "label": "/wiki/Egg_of_Columbus_(mechanical_puzzle)", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Easter_egg", "label": "/wiki/Easter_egg", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/The_West_Wing_(season_4)#Episodes", "label": "/wiki/The_West_Wing_(season_4)#Episodes", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/West_Wing_(TV_series)", "label": "/wiki/West_Wing_(TV_series)", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Instability", "label": "/wiki/Instability", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Monostatic_polytope", "label": "/wiki/Monostatic_polytope", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Self-righting_watercraft", "label": "/wiki/Self-righting_watercraft", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Aporia", "label": "/wiki/Aporia", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Archimedean_point", "label": "/wiki/Archimedean_point", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Endless_knot", "label": "/wiki/Endless_knot", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/G%C3%B6del%27s_Loophole", "label": "/wiki/G%C3%B6del%27s_Loophole", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Kobayashi_Maru", "label": "/wiki/Kobayashi_Maru", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Ouroboros", "label": "/wiki/Ouroboros", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Sovereignty", "label": "/wiki/Sovereignty", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Trefoil_knot", "label": "/wiki/Trefoil_knot", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Yoke_and_arrows", "label": "/wiki/Yoke_and_arrows", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Wicked_problem", "label": "/wiki/Wicked_problem", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/World_riddle", "label": "/wiki/World_riddle", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Confirmation_bias", "label": "/wiki/Confirmation_bias", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Curse_of_knowledge", "label": "/wiki/Curse_of_knowledge", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Historian%27s_fallacy", "label": "/wiki/Historian%27s_fallacy", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Memory_conformity", "label": "/wiki/Memory_conformity", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Observational_error", "label": "/wiki/Observational_error", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Outcome_bias", "label": "/wiki/Outcome_bias", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Sampling_bias", "label": "/wiki/Sampling_bias", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Selection_bias", "label": "/wiki/Selection_bias", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Portal:Denmark", "label": "/wiki/Portal:Denmark", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Portal:Mathematics", "label": "/wiki/Portal:Mathematics", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Portal:Toys", "label": "/wiki/Portal:Toys", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Portal:Poetry", "label": "/wiki/Portal:Poetry", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Flipism", "label": "/wiki/Flipism", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Portal:Finland", "label": "/wiki/Portal:Finland", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Portal:Myths", "label": "/wiki/Portal:Myths", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Finnish_mythology", "label": "/wiki/Finnish_mythology", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Mythologia_Fennica", "label": "/wiki/Mythologia_Fennica", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Finnish_national_symbols", "label": "/wiki/Finnish_national_symbols", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Kalevi_(mythology)", "label": "/wiki/Kalevi_(mythology)", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Kalevipoeg", "label": "/wiki/Kalevipoeg", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Kanteletar", "label": "/wiki/Kanteletar", "shape": "dot", "size": 0}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "/wiki/Kojiki", "label": "/wiki/Kojiki", "shape": "dot", "size": 0}]);
+                  edges = new vis.DataSet([{"from": "/wiki/Michelangelo", "to": "/wiki/Portal:Italy", "width": 1}, {"from": "/wiki/Michelangelo", "to": "/wiki/Portal:Biography", "width": 1}, {"from": "/wiki/Michelangelo", "to": "/wiki/Portal:Visual_arts", "width": 1}, {"from": "/wiki/Michelangelo", "to": "/wiki/Michelangelo_and_the_Medici", "width": 1}, {"from": "/wiki/Michelangelo", "to": "/wiki/Italian_Renaissance_sculpture", "width": 1}, {"from": "/wiki/Michelangelo", "to": "/wiki/Italian_Renaissance_painting", "width": 1}, {"from": "/wiki/Michelangelo", "to": "/wiki/Michelangelo_phenomenon", "width": 1}, {"from": "/wiki/Michelangelo", "to": "/wiki/Nicodemite", "width": 1}, {"from": "/wiki/Michelangelo", "to": "/wiki/Restoration_of_the_Sistine_Chapel_frescoes", "width": 1}, {"from": "/wiki/Michelangelo_and_the_Medici", "to": "/wiki/Lives_of_the_Most_Excellent_Painters,_Sculptors,_and_Architects", "width": 1}, {"from": "/wiki/Michelangelo_and_the_Medici", "to": "/wiki/List_of_works_by_Michelangelo", "width": 1}, {"from": "/wiki/Italian_Renaissance_painting", "to": "/wiki/Lives_of_the_Most_Excellent_Painters,_Sculptors,_and_Architects", "width": 1}, {"from": "/wiki/Italian_Renaissance_painting", "to": "/wiki/Old_Master", "width": 1}, {"from": "/wiki/Italian_Renaissance_painting", "to": "/wiki/Template:Timeline_of_Italian_artists_to_1800", "width": 1}, {"from": "/wiki/Michelangelo_phenomenon", "to": "/wiki/Symbolic_interactionism", "width": 1}, {"from": "/wiki/Michelangelo_phenomenon", "to": "/wiki/William_James", "width": 1}, {"from": "/wiki/Michelangelo_phenomenon", "to": "/wiki/George_Herbert_Mead", "width": 1}, {"from": "/wiki/Nicodemite", "to": "/wiki/An_Historical_Account_of_Two_Notable_Corruptions_of_Scripture", "width": 1}, {"from": "/wiki/Nicodemite", "to": "/wiki/Crypto-Christianity", "width": 1}, {"from": "/wiki/Nicodemite", "to": "/wiki/Crypto-Islam", "width": 1}, {"from": "/wiki/Nicodemite", "to": "/wiki/Crypto-Judaism", "width": 1}, {"from": "/wiki/Nicodemite", "to": "/wiki/Crypto-Protestantism", "width": 1}, {"from": "/wiki/Nicodemite", "to": "/wiki/Crypto-Papism", "width": 1}, {"from": "/wiki/Nicodemite", "to": "/wiki/Marrano", "width": 1}, {"from": "/wiki/Nicodemite", "to": "/wiki/Morisco", "width": 1}, {"from": "/wiki/Nicodemite", "to": "/wiki/Religious_views_of_Isaac_Newton", "width": 1}, {"from": "/wiki/Nicodemite", "to": "/wiki/Taqiyya", "width": 1}, {"from": "/wiki/Restoration_of_the_Sistine_Chapel_frescoes", "to": "/wiki/Index_of_Vatican_City-related_articles", "width": 1}, {"from": "/wiki/Restoration_of_the_Sistine_Chapel_frescoes", "to": "/wiki/List_of_works_by_Michelangelo", "width": 1}, {"from": "/wiki/Lives_of_the_Most_Excellent_Painters,_Sculptors,_and_Architects", "to": "/wiki/Egg_of_Columbus", "width": 1}, {"from": "/wiki/Egg_of_Columbus", "to": "/wiki/Egg_balancing", "width": 1}, {"from": "/wiki/Egg_of_Columbus", "to": "/wiki/G%C3%B6mb%C3%B6c", "width": 1}, {"from": "/wiki/Egg_of_Columbus", "to": "/wiki/Gordian_Knot", "width": 1}, {"from": "/wiki/Egg_of_Columbus", "to": "/wiki/Hindsight_bias", "width": 1}, {"from": "/wiki/Egg_of_Columbus", "to": "/wiki/Superegg", "width": 1}, {"from": "/wiki/Egg_of_Columbus", "to": "/wiki/Piet_Hein_(Denmark)", "width": 1}, {"from": "/wiki/Egg_of_Columbus", "to": "/wiki/Tesla%27s_Egg_of_Columbus", "width": 1}, {"from": "/wiki/Egg_of_Columbus", "to": "/wiki/V%C3%A4in%C3%A4m%C3%B6inen", "width": 1}, {"from": "/wiki/Egg_of_Columbus", "to": "/wiki/Kalevala", "width": 1}, {"from": "/wiki/Egg_balancing", "to": "/wiki/Egg_of_Columbus_(mechanical_puzzle)", "width": 1}, {"from": "/wiki/Egg_balancing", "to": "/wiki/Easter_egg", "width": 1}, {"from": "/wiki/Egg_balancing", "to": "/wiki/Superegg", "width": 1}, {"from": "/wiki/Egg_balancing", "to": "/wiki/The_West_Wing_(season_4)#Episodes", "width": 1}, {"from": "/wiki/Egg_balancing", "to": "/wiki/West_Wing_(TV_series)", "width": 1}, {"from": "/wiki/G%C3%B6mb%C3%B6c", "to": "/wiki/Instability", "width": 1}, {"from": "/wiki/G%C3%B6mb%C3%B6c", "to": "/wiki/Monostatic_polytope", "width": 1}, {"from": "/wiki/G%C3%B6mb%C3%B6c", "to": "/wiki/Self-righting_watercraft", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/Aporia", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/Archimedean_point", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/Endless_knot", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/G%C3%B6del%27s_Loophole", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/Kobayashi_Maru", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/Ouroboros", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/Sovereignty", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/Trefoil_knot", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/Yoke_and_arrows", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/Wicked_problem", "width": 1}, {"from": "/wiki/Gordian_Knot", "to": "/wiki/World_riddle", "width": 1}, {"from": "/wiki/Hindsight_bias", "to": "/wiki/Confirmation_bias", "width": 1}, {"from": "/wiki/Hindsight_bias", "to": "/wiki/Curse_of_knowledge", "width": 1}, {"from": "/wiki/Hindsight_bias", "to": "/wiki/Historian%27s_fallacy", "width": 1}, {"from": "/wiki/Hindsight_bias", "to": "/wiki/Memory_conformity", "width": 1}, {"from": "/wiki/Hindsight_bias", "to": "/wiki/Observational_error", "width": 1}, {"from": "/wiki/Hindsight_bias", "to": "/wiki/Outcome_bias", "width": 1}, {"from": "/wiki/Hindsight_bias", "to": "/wiki/Sampling_bias", "width": 1}, {"from": "/wiki/Hindsight_bias", "to": "/wiki/Selection_bias", "width": 1}, {"from": "/wiki/Superegg", "to": "/wiki/Portal:Denmark", "width": 1}, {"from": "/wiki/Superegg", "to": "/wiki/Portal:Mathematics", "width": 1}, {"from": "/wiki/Superegg", "to": "/wiki/Portal:Toys", "width": 1}, {"from": "/wiki/Piet_Hein_(Denmark)", "to": "/wiki/Portal:Poetry", "width": 1}, {"from": "/wiki/Piet_Hein_(Denmark)", "to": "/wiki/Flipism", "width": 1}, {"from": "/wiki/Kalevala", "to": "/wiki/Portal:Finland", "width": 1}, {"from": "/wiki/Kalevala", "to": "/wiki/Portal:Myths", "width": 1}, {"from": "/wiki/Kalevala", "to": "/wiki/Portal:Poetry", "width": 1}, {"from": "/wiki/Kalevala", "to": "/wiki/Finnish_mythology", "width": 1}, {"from": "/wiki/Kalevala", "to": "/wiki/Mythologia_Fennica", "width": 1}, {"from": "/wiki/Kalevala", "to": "/wiki/Finnish_national_symbols", "width": 1}, {"from": "/wiki/Kalevala", "to": "/wiki/Kalevi_(mythology)", "width": 1}, {"from": "/wiki/Kalevala", "to": "/wiki/Kalevipoeg", "width": 1}, {"from": "/wiki/Kalevala", "to": "/wiki/Kanteletar", "width": 1}, {"from": "/wiki/Kalevala", "to": "/wiki/Kojiki", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,839 @@
+{
+    "Russia": {
+        "link": "/wiki/Russia",
+        "relationships": [
+            {
+                "title": "Geographic coordinate system",
+                "link": "/wiki/Geographic_coordinate_system"
+            },
+            {
+                "title": "This article is extended-protected.",
+                "link": "/wiki/Wikipedia:Protection_policy#extended"
+            },
+            {
+                "title": "Russia (disambiguation)",
+                "link": "/wiki/Russia_(disambiguation)"
+            },
+            {
+                "title": "Russian language",
+                "link": "/wiki/Russian_language"
+            },
+            {
+                "title": "Flag of Russia",
+                "link": "/wiki/Flag_of_Russia"
+            },
+            {
+                "title": "Coat of arms of Russia",
+                "link": "/wiki/Coat_of_arms_of_Russia"
+            },
+            {
+                "title": "State Anthem of the Russian Federation",
+                "link": "/wiki/State_Anthem_of_the_Russian_Federation"
+            },
+            {
+                "title": "Moscow",
+                "link": "/wiki/Moscow"
+            },
+            {
+                "title": "Russian language",
+                "link": "/wiki/Russian_language"
+            },
+            {
+                "title": "Languages of Russia",
+                "link": "/wiki/Languages_of_Russia#Official_languages"
+            },
+            {
+                "title": "Ethnic group",
+                "link": "/wiki/Ethnic_group"
+            },
+            {
+                "title": "Russians",
+                "link": "/wiki/Russians"
+            },
+            {
+                "title": "Tatars",
+                "link": "/wiki/Tatars"
+            },
+            {
+                "title": "Bashkirs",
+                "link": "/wiki/Bashkirs"
+            },
+            {
+                "title": "Chechens",
+                "link": "/wiki/Chechens"
+            },
+            {
+                "title": "Ethnic groups in Russia",
+                "link": "/wiki/Ethnic_groups_in_Russia"
+            },
+            {
+                "title": "Christianity in Russia",
+                "link": "/wiki/Christianity_in_Russia"
+            },
+            {
+                "title": "Russian Orthodox Church",
+                "link": "/wiki/Russian_Orthodox_Church"
+            },
+            {
+                "title": "List of Christian denominations",
+                "link": "/wiki/List_of_Christian_denominations"
+            },
+            {
+                "title": "Irreligion in Russia",
+                "link": "/wiki/Irreligion_in_Russia"
+            },
+            {
+                "title": "Islam in Russia",
+                "link": "/wiki/Islam_in_Russia"
+            },
+            {
+                "title": "Religion in Russia",
+                "link": "/wiki/Religion_in_Russia"
+            },
+            {
+                "title": "Buddhism in Russia",
+                "link": "/wiki/Buddhism_in_Russia"
+            },
+            {
+                "title": "Demonym",
+                "link": "/wiki/Demonym"
+            },
+            {
+                "title": "Russian people",
+                "link": "/wiki/Russian_people"
+            },
+            {
+                "title": "Politics of Russia",
+                "link": "/wiki/Politics_of_Russia"
+            },
+            {
+                "title": "Semi-presidential republic",
+                "link": "/wiki/Semi-presidential_republic"
+            },
+            {
+                "title": "Authoritarianism",
+                "link": "/wiki/Authoritarianism"
+            },
+            {
+                "title": "President of Russia",
+                "link": "/wiki/President_of_Russia"
+            },
+            {
+                "title": "Vladimir Putin",
+                "link": "/wiki/Vladimir_Putin"
+            },
+            {
+                "title": "Prime Minister of Russia",
+                "link": "/wiki/Prime_Minister_of_Russia"
+            },
+            {
+                "title": "Mikhail Mishustin",
+                "link": "/wiki/Mikhail_Mishustin"
+            },
+            {
+                "title": "Federal Assembly (Russia)",
+                "link": "/wiki/Federal_Assembly_(Russia)"
+            },
+            {
+                "title": "Upper house",
+                "link": "/wiki/Upper_house"
+            },
+            {
+                "title": "Federation Council (Russia)",
+                "link": "/wiki/Federation_Council_(Russia)"
+            },
+            {
+                "title": "Lower house",
+                "link": "/wiki/Lower_house"
+            },
+            {
+                "title": "State Duma",
+                "link": "/wiki/State_Duma"
+            },
+            {
+                "title": "History of Russia",
+                "link": "/wiki/History_of_Russia"
+            },
+            {
+                "title": "Kievan Rus'",
+                "link": "/wiki/Kievan_Rus%27"
+            },
+            {
+                "title": "Vladimir-Suzdal",
+                "link": "/wiki/Vladimir-Suzdal"
+            },
+            {
+                "title": "Principality of Moscow",
+                "link": "/wiki/Principality_of_Moscow"
+            },
+            {
+                "title": "Tsardom of Russia",
+                "link": "/wiki/Tsardom_of_Russia"
+            },
+            {
+                "title": "Russian Empire",
+                "link": "/wiki/Russian_Empire"
+            },
+            {
+                "title": "February Revolution",
+                "link": "/wiki/February_Revolution"
+            },
+            {
+                "title": "Soviet Union",
+                "link": "/wiki/Soviet_Union"
+            },
+            {
+                "title": "Declaration of State Sovereignty of the Russian Soviet Federative Socialist Republic",
+                "link": "/wiki/Declaration_of_State_Sovereignty_of_the_Russian_Soviet_Federative_Socialist_Republic"
+            },
+            {
+                "title": "Belovezha Accords",
+                "link": "/wiki/Belovezha_Accords"
+            },
+            {
+                "title": "Constitution of Russia",
+                "link": "/wiki/Constitution_of_Russia"
+            },
+            {
+                "title": "Union State",
+                "link": "/wiki/Union_State"
+            },
+            {
+                "title": "Geography of Russia",
+                "link": "/wiki/Geography_of_Russia"
+            },
+            {
+                "title": "Demographics of Russia",
+                "link": "/wiki/Demographics_of_Russia"
+            },
+            {
+                "title": "List of countries and dependencies by population",
+                "link": "/wiki/List_of_countries_and_dependencies_by_population"
+            },
+            {
+                "title": "List of countries and dependencies by population density",
+                "link": "/wiki/List_of_countries_and_dependencies_by_population_density"
+            },
+            {
+                "title": "Gross domestic product",
+                "link": "/wiki/Gross_domestic_product"
+            },
+            {
+                "title": "Purchasing power parity",
+                "link": "/wiki/Purchasing_power_parity"
+            },
+            {
+                "title": "List of countries by GDP (PPP)",
+                "link": "/wiki/List_of_countries_by_GDP_(PPP)"
+            },
+            {
+                "title": "List of countries by GDP (PPP) per capita",
+                "link": "/wiki/List_of_countries_by_GDP_(PPP)_per_capita"
+            },
+            {
+                "title": "Gross domestic product",
+                "link": "/wiki/Gross_domestic_product"
+            },
+            {
+                "title": "List of countries by GDP (nominal)",
+                "link": "/wiki/List_of_countries_by_GDP_(nominal)"
+            },
+            {
+                "title": "List of countries by GDP (nominal) per capita",
+                "link": "/wiki/List_of_countries_by_GDP_(nominal)_per_capita"
+            },
+            {
+                "title": "Gini coefficient",
+                "link": "/wiki/Gini_coefficient"
+            },
+            {
+                "title": "Human Development Index",
+                "link": "/wiki/Human_Development_Index"
+            },
+            {
+                "title": "List of countries by Human Development Index",
+                "link": "/wiki/List_of_countries_by_Human_Development_Index"
+            },
+            {
+                "title": "Russian ruble",
+                "link": "/wiki/Russian_ruble"
+            },
+            {
+                "title": "\u20bd",
+                "link": "/wiki/%E2%82%BD"
+            },
+            {
+                "title": "ISO 4217",
+                "link": "/wiki/ISO_4217"
+            },
+            {
+                "title": "Coordinated Universal Time",
+                "link": "/wiki/Coordinated_Universal_Time"
+            },
+            {
+                "title": "Left- and right-hand traffic",
+                "link": "/wiki/Left-_and_right-hand_traffic"
+            },
+            {
+                "title": "Telephone numbers in Russia",
+                "link": "/wiki/Telephone_numbers_in_Russia"
+            },
+            {
+                "title": "Telephone numbers in Russia",
+                "link": "/wiki/Telephone_numbers_in_Russia"
+            },
+            {
+                "title": "ISO 3166",
+                "link": "/wiki/ISO_3166"
+            },
+            {
+                "title": "ISO 3166-2:RU",
+                "link": "/wiki/ISO_3166-2:RU"
+            },
+            {
+                "title": "Country code top-level domain",
+                "link": "/wiki/Country_code_top-level_domain"
+            },
+            {
+                "title": ".ru",
+                "link": "/wiki/.ru"
+            },
+            {
+                "title": ".\u0440\u0444",
+                "link": "/wiki/.%D1%80%D1%84"
+            },
+            {
+                "title": "Eastern Europe",
+                "link": "/wiki/Eastern_Europe"
+            },
+            {
+                "title": "North Asia",
+                "link": "/wiki/North_Asia"
+            },
+            {
+                "title": "List of countries and dependencies by area",
+                "link": "/wiki/List_of_countries_and_dependencies_by_area"
+            },
+            {
+                "title": "Time in Russia",
+                "link": "/wiki/Time_in_Russia"
+            },
+            {
+                "title": "Borders of Russia",
+                "link": "/wiki/Borders_of_Russia"
+            },
+            {
+                "title": "List of countries and dependencies by population",
+                "link": "/wiki/List_of_countries_and_dependencies_by_population"
+            },
+            {
+                "title": "List of European countries by population",
+                "link": "/wiki/List_of_European_countries_by_population"
+            },
+            {
+                "title": "List of cities and towns in Russia by population",
+                "link": "/wiki/List_of_cities_and_towns_in_Russia_by_population"
+            },
+            {
+                "title": "List of cities and towns in Russia by population",
+                "link": "/wiki/List_of_cities_and_towns_in_Russia_by_population"
+            },
+            {
+                "title": "Moscow",
+                "link": "/wiki/Moscow"
+            },
+            {
+                "title": "Saint Petersburg",
+                "link": "/wiki/Saint_Petersburg"
+            },
+            {
+                "title": "Society and culture in Saint Petersburg",
+                "link": "/wiki/Society_and_culture_in_Saint_Petersburg"
+            },
+            {
+                "title": "East Slavs",
+                "link": "/wiki/East_Slavs"
+            },
+            {
+                "title": "Kievan Rus'",
+                "link": "/wiki/Kievan_Rus%27"
+            },
+            {
+                "title": "Eastern Orthodox Church",
+                "link": "/wiki/Eastern_Orthodox_Church"
+            },
+            {
+                "title": "Byzantine Empire",
+                "link": "/wiki/Byzantine_Empire"
+            },
+            {
+                "title": "Grand Duchy of Moscow",
+                "link": "/wiki/Grand_Duchy_of_Moscow"
+            },
+            {
+                "title": "Tsardom of Russia",
+                "link": "/wiki/Tsardom_of_Russia"
+            },
+            {
+                "title": "List of Russian explorers",
+                "link": "/wiki/List_of_Russian_explorers"
+            },
+            {
+                "title": "Russian Empire",
+                "link": "/wiki/Russian_Empire"
+            },
+            {
+                "title": "List of largest empires",
+                "link": "/wiki/List_of_largest_empires"
+            },
+            {
+                "title": "Russian Revolution",
+                "link": "/wiki/Russian_Revolution"
+            },
+            {
+                "title": "Dissolution of the Russian Empire",
+                "link": "/wiki/Dissolution_of_the_Russian_Empire"
+            },
+            {
+                "title": "Russian Soviet Federative Socialist Republic",
+                "link": "/wiki/Russian_Soviet_Federative_Socialist_Republic"
+            },
+            {
+                "title": "Socialist state",
+                "link": "/wiki/Socialist_state"
+            },
+            {
+                "title": "Russian Civil War",
+                "link": "/wiki/Russian_Civil_War"
+            },
+            {
+                "title": "Soviet Union",
+                "link": "/wiki/Soviet_Union"
+            },
+            {
+                "title": "Republics of the Soviet Union",
+                "link": "/wiki/Republics_of_the_Soviet_Union"
+            },
+            {
+                "title": "Excess mortality in the Soviet Union under Joseph Stalin",
+                "link": "/wiki/Excess_mortality_in_the_Soviet_Union_under_Joseph_Stalin"
+            },
+            {
+                "title": "Industrialization in the Soviet Union",
+                "link": "/wiki/Industrialization_in_the_Soviet_Union"
+            },
+            {
+                "title": "Allies in World War II",
+                "link": "/wiki/Allies_in_World_War_II"
+            },
+            {
+                "title": "Eastern Front (World War II)",
+                "link": "/wiki/Eastern_Front_(World_War_II)"
+            },
+            {
+                "title": "Cold War",
+                "link": "/wiki/Cold_War"
+            },
+            {
+                "title": "United States",
+                "link": "/wiki/United_States"
+            }
+        ]
+    },
+    "Geographic coordinate system": {
+        "link": "/wiki/Geographic_coordinate_system",
+        "relationships": []
+    },
+    "This article is extended-protected.": {
+        "link": "/wiki/Wikipedia:Protection_policy#extended",
+        "relationships": []
+    },
+    "Russia (disambiguation)": {
+        "link": "/wiki/Russia_(disambiguation)",
+        "relationships": []
+    },
+    "Russian language": {
+        "link": "/wiki/Russian_language",
+        "relationships": []
+    },
+    "Flag of Russia": {
+        "link": "/wiki/Flag_of_Russia",
+        "relationships": []
+    },
+    "Coat of arms of Russia": {
+        "link": "/wiki/Coat_of_arms_of_Russia",
+        "relationships": []
+    },
+    "State Anthem of the Russian Federation": {
+        "link": "/wiki/State_Anthem_of_the_Russian_Federation",
+        "relationships": []
+    },
+    "Moscow": {
+        "link": "/wiki/Moscow",
+        "relationships": []
+    },
+    "Languages of Russia": {
+        "link": "/wiki/Languages_of_Russia#Official_languages",
+        "relationships": []
+    },
+    "Ethnic group": {
+        "link": "/wiki/Ethnic_group",
+        "relationships": []
+    },
+    "Russians": {
+        "link": "/wiki/Russians",
+        "relationships": []
+    },
+    "Tatars": {
+        "link": "/wiki/Tatars",
+        "relationships": []
+    },
+    "Bashkirs": {
+        "link": "/wiki/Bashkirs",
+        "relationships": []
+    },
+    "Chechens": {
+        "link": "/wiki/Chechens",
+        "relationships": []
+    },
+    "Ethnic groups in Russia": {
+        "link": "/wiki/Ethnic_groups_in_Russia",
+        "relationships": []
+    },
+    "Christianity in Russia": {
+        "link": "/wiki/Christianity_in_Russia",
+        "relationships": []
+    },
+    "Russian Orthodox Church": {
+        "link": "/wiki/Russian_Orthodox_Church",
+        "relationships": []
+    },
+    "List of Christian denominations": {
+        "link": "/wiki/List_of_Christian_denominations",
+        "relationships": []
+    },
+    "Irreligion in Russia": {
+        "link": "/wiki/Irreligion_in_Russia",
+        "relationships": []
+    },
+    "Islam in Russia": {
+        "link": "/wiki/Islam_in_Russia",
+        "relationships": []
+    },
+    "Religion in Russia": {
+        "link": "/wiki/Religion_in_Russia",
+        "relationships": []
+    },
+    "Buddhism in Russia": {
+        "link": "/wiki/Buddhism_in_Russia",
+        "relationships": []
+    },
+    "Demonym": {
+        "link": "/wiki/Demonym",
+        "relationships": []
+    },
+    "Russian people": {
+        "link": "/wiki/Russian_people",
+        "relationships": []
+    },
+    "Politics of Russia": {
+        "link": "/wiki/Politics_of_Russia",
+        "relationships": []
+    },
+    "Semi-presidential republic": {
+        "link": "/wiki/Semi-presidential_republic",
+        "relationships": []
+    },
+    "Authoritarianism": {
+        "link": "/wiki/Authoritarianism",
+        "relationships": []
+    },
+    "President of Russia": {
+        "link": "/wiki/President_of_Russia",
+        "relationships": []
+    },
+    "Vladimir Putin": {
+        "link": "/wiki/Vladimir_Putin",
+        "relationships": []
+    },
+    "Prime Minister of Russia": {
+        "link": "/wiki/Prime_Minister_of_Russia",
+        "relationships": []
+    },
+    "Mikhail Mishustin": {
+        "link": "/wiki/Mikhail_Mishustin",
+        "relationships": []
+    },
+    "Federal Assembly (Russia)": {
+        "link": "/wiki/Federal_Assembly_(Russia)",
+        "relationships": []
+    },
+    "Upper house": {
+        "link": "/wiki/Upper_house",
+        "relationships": []
+    },
+    "Federation Council (Russia)": {
+        "link": "/wiki/Federation_Council_(Russia)",
+        "relationships": []
+    },
+    "Lower house": {
+        "link": "/wiki/Lower_house",
+        "relationships": []
+    },
+    "State Duma": {
+        "link": "/wiki/State_Duma",
+        "relationships": []
+    },
+    "History of Russia": {
+        "link": "/wiki/History_of_Russia",
+        "relationships": []
+    },
+    "Kievan Rus'": {
+        "link": "/wiki/Kievan_Rus%27",
+        "relationships": []
+    },
+    "Vladimir-Suzdal": {
+        "link": "/wiki/Vladimir-Suzdal",
+        "relationships": []
+    },
+    "Principality of Moscow": {
+        "link": "/wiki/Principality_of_Moscow",
+        "relationships": []
+    },
+    "Tsardom of Russia": {
+        "link": "/wiki/Tsardom_of_Russia",
+        "relationships": []
+    },
+    "Russian Empire": {
+        "link": "/wiki/Russian_Empire",
+        "relationships": []
+    },
+    "February Revolution": {
+        "link": "/wiki/February_Revolution",
+        "relationships": []
+    },
+    "Soviet Union": {
+        "link": "/wiki/Soviet_Union",
+        "relationships": []
+    },
+    "Declaration of State Sovereignty of the Russian Soviet Federative Socialist Republic": {
+        "link": "/wiki/Declaration_of_State_Sovereignty_of_the_Russian_Soviet_Federative_Socialist_Republic",
+        "relationships": []
+    },
+    "Belovezha Accords": {
+        "link": "/wiki/Belovezha_Accords",
+        "relationships": []
+    },
+    "Constitution of Russia": {
+        "link": "/wiki/Constitution_of_Russia",
+        "relationships": []
+    },
+    "Union State": {
+        "link": "/wiki/Union_State",
+        "relationships": []
+    },
+    "Geography of Russia": {
+        "link": "/wiki/Geography_of_Russia",
+        "relationships": []
+    },
+    "Demographics of Russia": {
+        "link": "/wiki/Demographics_of_Russia",
+        "relationships": []
+    },
+    "List of countries and dependencies by population": {
+        "link": "/wiki/List_of_countries_and_dependencies_by_population",
+        "relationships": []
+    },
+    "List of countries and dependencies by population density": {
+        "link": "/wiki/List_of_countries_and_dependencies_by_population_density",
+        "relationships": []
+    },
+    "Gross domestic product": {
+        "link": "/wiki/Gross_domestic_product",
+        "relationships": []
+    },
+    "Purchasing power parity": {
+        "link": "/wiki/Purchasing_power_parity",
+        "relationships": []
+    },
+    "List of countries by GDP (PPP)": {
+        "link": "/wiki/List_of_countries_by_GDP_(PPP)",
+        "relationships": []
+    },
+    "List of countries by GDP (PPP) per capita": {
+        "link": "/wiki/List_of_countries_by_GDP_(PPP)_per_capita",
+        "relationships": []
+    },
+    "List of countries by GDP (nominal)": {
+        "link": "/wiki/List_of_countries_by_GDP_(nominal)",
+        "relationships": []
+    },
+    "List of countries by GDP (nominal) per capita": {
+        "link": "/wiki/List_of_countries_by_GDP_(nominal)_per_capita",
+        "relationships": []
+    },
+    "Gini coefficient": {
+        "link": "/wiki/Gini_coefficient",
+        "relationships": []
+    },
+    "Human Development Index": {
+        "link": "/wiki/Human_Development_Index",
+        "relationships": []
+    },
+    "List of countries by Human Development Index": {
+        "link": "/wiki/List_of_countries_by_Human_Development_Index",
+        "relationships": []
+    },
+    "Russian ruble": {
+        "link": "/wiki/Russian_ruble",
+        "relationships": []
+    },
+    "\u20bd": {
+        "link": "/wiki/%E2%82%BD",
+        "relationships": []
+    },
+    "ISO 4217": {
+        "link": "/wiki/ISO_4217",
+        "relationships": []
+    },
+    "Coordinated Universal Time": {
+        "link": "/wiki/Coordinated_Universal_Time",
+        "relationships": []
+    },
+    "Left- and right-hand traffic": {
+        "link": "/wiki/Left-_and_right-hand_traffic",
+        "relationships": []
+    },
+    "Telephone numbers in Russia": {
+        "link": "/wiki/Telephone_numbers_in_Russia",
+        "relationships": []
+    },
+    "ISO 3166": {
+        "link": "/wiki/ISO_3166",
+        "relationships": []
+    },
+    "ISO 3166-2:RU": {
+        "link": "/wiki/ISO_3166-2:RU",
+        "relationships": []
+    },
+    "Country code top-level domain": {
+        "link": "/wiki/Country_code_top-level_domain",
+        "relationships": []
+    },
+    ".ru": {
+        "link": "/wiki/.ru",
+        "relationships": []
+    },
+    ".\u0440\u0444": {
+        "link": "/wiki/.%D1%80%D1%84",
+        "relationships": []
+    },
+    "Eastern Europe": {
+        "link": "/wiki/Eastern_Europe",
+        "relationships": []
+    },
+    "North Asia": {
+        "link": "/wiki/North_Asia",
+        "relationships": []
+    },
+    "List of countries and dependencies by area": {
+        "link": "/wiki/List_of_countries_and_dependencies_by_area",
+        "relationships": []
+    },
+    "Time in Russia": {
+        "link": "/wiki/Time_in_Russia",
+        "relationships": []
+    },
+    "Borders of Russia": {
+        "link": "/wiki/Borders_of_Russia",
+        "relationships": []
+    },
+    "List of European countries by population": {
+        "link": "/wiki/List_of_European_countries_by_population",
+        "relationships": []
+    },
+    "List of cities and towns in Russia by population": {
+        "link": "/wiki/List_of_cities_and_towns_in_Russia_by_population",
+        "relationships": []
+    },
+    "Saint Petersburg": {
+        "link": "/wiki/Saint_Petersburg",
+        "relationships": []
+    },
+    "Society and culture in Saint Petersburg": {
+        "link": "/wiki/Society_and_culture_in_Saint_Petersburg",
+        "relationships": []
+    },
+    "East Slavs": {
+        "link": "/wiki/East_Slavs",
+        "relationships": []
+    },
+    "Eastern Orthodox Church": {
+        "link": "/wiki/Eastern_Orthodox_Church",
+        "relationships": []
+    },
+    "Byzantine Empire": {
+        "link": "/wiki/Byzantine_Empire",
+        "relationships": []
+    },
+    "Grand Duchy of Moscow": {
+        "link": "/wiki/Grand_Duchy_of_Moscow",
+        "relationships": []
+    },
+    "List of Russian explorers": {
+        "link": "/wiki/List_of_Russian_explorers",
+        "relationships": []
+    },
+    "List of largest empires": {
+        "link": "/wiki/List_of_largest_empires",
+        "relationships": []
+    },
+    "Russian Revolution": {
+        "link": "/wiki/Russian_Revolution",
+        "relationships": []
+    },
+    "Dissolution of the Russian Empire": {
+        "link": "/wiki/Dissolution_of_the_Russian_Empire",
+        "relationships": []
+    },
+    "Russian Soviet Federative Socialist Republic": {
+        "link": "/wiki/Russian_Soviet_Federative_Socialist_Republic",
+        "relationships": []
+    },
+    "Socialist state": {
+        "link": "/wiki/Socialist_state",
+        "relationships": []
+    },
+    "Russian Civil War": {
+        "link": "/wiki/Russian_Civil_War",
+        "relationships": []
+    },
+    "Republics of the Soviet Union": {
+        "link": "/wiki/Republics_of_the_Soviet_Union",
+        "relationships": []
+    },
+    "Excess mortality in the Soviet Union under Joseph Stalin": {
+        "link": "/wiki/Excess_mortality_in_the_Soviet_Union_under_Joseph_Stalin",
+        "relationships": []
+    },
+    "Industrialization in the Soviet Union": {
+        "link": "/wiki/Industrialization_in_the_Soviet_Union",
+        "relationships": []
+    },
+    "Allies in World War II": {
+        "link": "/wiki/Allies_in_World_War_II",
+        "relationships": []
+    },
+    "Eastern Front (World War II)": {
+        "link": "/wiki/Eastern_Front_(World_War_II)",
+        "relationships": []
+    },
+    "Cold War": {
+        "link": "/wiki/Cold_War",
+        "relationships": []
+    },
+    "United States": {
+        "link": "/wiki/United_States",
+        "relationships": []
+    }
+}
